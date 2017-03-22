@@ -11,19 +11,13 @@
 		}
 	</style>
 	<script>
-		class ToRed{
-			constructor(obj){
-				this.obj = obj;
-				let _this = this;
-				_this.obj.onclick = function(){
-					_this.obj.style.background = 'yellow';
-				}
-				
-			}
-		}
 		window.onload = function(){
 			var oBtn = document.querySelector('button')
-			let r1 = new ToRed(oBtn)
+			var oDiv= document.querySelector('div')
+			oBtn.onclick = function(){
+				oDiv.style.background = 'yellow';
+			}
+			
 		}
 		
 	</script>
