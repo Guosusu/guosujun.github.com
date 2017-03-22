@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		div{
+			width: 200px;
+			height: 200px;
+			background: red;
+		}
+	</style>
+	<script>
+		class ToRed{
+			constructor(obj){
+				this.obj = obj;
+				let _this = this;
+				_this.obj.onclick = function(){
+					_this.obj.style.background = 'yellow';
+				}
+				
+			}
+		}
+		window.onload = function(){
+			var oBtn = document.querySelector('button')
+			let r1 = new ToRed(oBtn)
+		}
+		
+	</script>
+</head>
+<body>
+	<button >按钮</button>
+	<div>
+		
+	</div>
+</body>
+</html>
